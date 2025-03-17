@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Employee Dashboard - Task Management System</title>
+    <link rel="stylesheet" href="dashboard.css">
+    <link rel="stylesheet" href="dark-mode.css">
+</head>
+<body>
+    <button class="theme-toggle" id="themeToggle">🌙</button>
+    <div class="dashboard-container">
+        <header class="dashboard-header">
+            <h1>Employee Dashboard</h1>
+            <button id="logoutBtn" class="btn-logout">Logout</button>
+        </header>
+        <main class="dashboard-content">
+            <section class="task-list">
+                <h2>My Tasks</h2>
+                <div class="tasks-container" id="tasksList">
+                    <!-- Tasks will be populated here -->
+                </div>
+            </section>
+        </main>
+    </div>
+    <script src="employee-dashboard.js"></script>
+    <script src="theme.js"></script>
+</body>
+</html>

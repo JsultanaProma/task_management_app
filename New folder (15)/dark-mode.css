@@ -1,0 +1,171 @@
+/* Dark mode styles */
+body.dark-mode {
+    background-color: #1a1a1a;
+    color: #ffffff;
+    text-shadow: 0 0 2px rgba(255, 255, 255, 0.2);
+}
+
+.dark-mode .container,
+.dark-mode .dashboard-container {
+    background-color: #1a1a1a;
+}
+
+.dark-mode .login-form,
+.dark-mode .task-creation,
+.dark-mode .task-list {
+    background-color: #2d2d2d;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+}
+
+.dark-mode .form-group input,
+.dark-mode .form-group select,
+.dark-mode .form-group textarea {
+    background-color: #3d3d3d;
+    border-color: #4d4d4d;
+    color: #e0e0e0;
+}
+
+.dark-mode .form-group input:focus,
+.dark-mode .form-group select:focus,
+.dark-mode .form-group textarea:focus {
+    border-color: #6a9ee2;
+    background-color: #454545;
+}
+
+.dark-mode .task-card {
+    background: linear-gradient(to right, #2d2d2d, #252525);
+    border-left: 4px solid #60a5fa;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3), 0 0 2px rgba(96, 165, 250, 0.3);
+}
+
+.dark-mode .task-card:hover {
+    background: linear-gradient(to right, #333333, #2a2a2a);
+    border-left: 4px solid #2563eb;
+}
+
+.dark-mode .task-card h3 {
+    color: #ffffff;
+    text-shadow: 0 0 3px rgba(255, 255, 255, 0.3);
+    font-weight: 600;
+    animation: rgbGlow 3s infinite;
+}
+
+.dark-mode .task-meta select {
+    background-color: #3d3d3d;
+    border-color: #4d4d4d;
+    color: #e0e0e0;
+    box-shadow: 0 0 5px rgba(255, 0, 0, 0.5);
+    animation: rgbGlowBorder 3s infinite;
+}
+
+@keyframes rgbGlowBorder {
+    0% { box-shadow: 0 0 5px rgba(255, 0, 0, 0.5); border-color: rgba(255, 0, 0, 0.5); }
+    33% { box-shadow: 0 0 5px rgba(0, 255, 0, 0.5); border-color: rgba(0, 255, 0, 0.5); }
+    66% { box-shadow: 0 0 5px rgba(0, 0, 255, 0.5); border-color: rgba(0, 0, 255, 0.5); }
+    100% { box-shadow: 0 0 5px rgba(255, 0, 0, 0.5); border-color: rgba(255, 0, 0, 0.5); }
+}
+
+.dark-mode .task-card p {
+    color: #ffffff;
+}
+
+.dark-mode .task-meta {
+    color: #ffffff;
+}
+
+.dark-mode .task-meta select:focus {
+    border-color: #6a9ee2;
+}
+
+/* Dark mode status colors */
+.dark-mode .status-pending {
+    background: #3d3522;
+    color: #ffe082;
+    border: 1px solid #665c37;
+    text-shadow: 0 0 2px rgba(255, 224, 130, 0.3);
+}
+
+.dark-mode .status-in_progress {
+    background: #1a365d;
+    color: #90caf9;
+    border: 1px solid #2d4a7a;
+    text-shadow: 0 0 2px rgba(144, 202, 249, 0.3);
+}
+
+.dark-mode .status-completed {
+    background: #1b4332;
+    color: #a5d6a7;
+    border: 1px solid #2d5a3f;
+    text-shadow: 0 0 2px rgba(165, 214, 167, 0.3);
+}
+
+/* Dark mode priority colors */
+.dark-mode .priority-level1 {
+    background: #3d1f1f;
+    color: #ff8a80;
+    border: 1px solid #662929;
+    text-shadow: 0 0 2px rgba(255, 138, 128, 0.3);
+}
+
+.dark-mode .priority-level2 {
+    background: #3d2815;
+    color: #ffb74d;
+    border: 1px solid #664226;
+    text-shadow: 0 0 2px rgba(255, 183, 77, 0.3);
+}
+
+.dark-mode .priority-level3 {
+    background: #1b4332;
+    color: #81c784;
+    border: 1px solid #2d5a3f;
+    text-shadow: 0 0 2px rgba(129, 199, 132, 0.3);
+}
+
+/* Dark mode toggle button */
+.theme-toggle {
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    padding: 10px;
+    background: #4a90e2;
+    color: white;
+    border: none;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    cursor: pointer;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    transition: all 0.3s ease;
+}
+
+.theme-toggle:hover {
+    transform: scale(1.1);
+    background: #357abd;
+}
+
+/* Transition for theme switching */
+body {
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+* {
+    transition: background-color 0.3s ease, border-color 0.3s ease, box-shadow 0.3s ease;
+}
+@keyframes rgbGlow {
+    0% { text-shadow: 0 0 10px rgba(255, 0, 0, 0.7); }
+    33% { text-shadow: 0 0 10px rgba(0, 255, 0, 0.7); }
+    66% { text-shadow: 0 0 10px rgba(0, 0, 255, 0.7); }
+    100% { text-shadow: 0 0 10px rgba(255, 0, 0, 0.7); }
+}
+
+.dark-mode .form-group label {
+    color: #ffffff;
+    animation: rgbGlow 3s infinite;
+}
+
+.dark-mode h1,
+.dark-mode h2,
+.dark-mode h3 {
+    color: #ffffff;
+    text-shadow: 0 0 2px rgba(255, 255, 255, 0.2);
+}
